@@ -565,7 +565,7 @@ $CONFIGURE_OPTIONS"
       esac
     done
     if [ "$(uname -p)" = "x86_64" ] && [ "${append_default_libdir}" = 'yes' ]; then
-        argv="$argv --with-libdir=lib64"
+        argv="$argv --with-libdir=lib64 --with-libdir=lib/x86_64-linux-gnu"
     fi
 
     # Avoid installing PHP binary as "php.dSYM" on MacOSX 10.7 and 10.8.
